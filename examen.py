@@ -8,13 +8,13 @@ class Punto:
         return Punto(self.x, self.y)
     def cuadrante(self):
         if self.x > 0 and self.y > 0:
-            return 1
+            return "primer cuadrante"
         elif self.x < 0 and self.y > 0:
-            return 2
+            return "segundo cuadrante"
         elif self.x < 0 and self.y < 0:
-            return 3
+            return "tercer cuadrante"
         elif self.x > 0 and self.y < 0:
-            return 4
+            return "cuarto cuadrante"
         else:
             return 0
     def vector(self, punto):
