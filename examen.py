@@ -21,3 +21,7 @@ class Punto:
         return Punto(punto.x - self.x, punto.y - self.y)
     def distancia(self, punto):
         return ((punto.x - self.x)**2 + (punto.y - self.y)**2)**0.5
+class Rectangulo:
+    def __init__(self, punto1, punto2):
+        self.punto1 = punto1
+        self.punto2 = punto2
