@@ -33,10 +33,10 @@ class Rectangulo:
         return self.base() * self.altura()
 
 A = Punto(2, 3) ; B = Punto(5, 5) ; C = Punto(-3, -1) ; D = Punto(0, 0)
-print("El punto A es" + A.string()) ; print("El punto B es" + B.string()) ; print("El punto C es" + C.string()); print("El punto D es" + D.string())
-print("El punto A está en el" + A.cuadrante()) ; print("El punto B está en el" + B.cuadrante()) ; print("El punto C está en el" + C.cuadrante()) ; print("El punto D está en el" + D.cuadrante())
-print("El vector AB es"+A.vector(B).string()) ; print("El vector BA es" + B.vector(A).string())
-print("La distancia entre Ay B es" + A.distancia(B)) ; print("La distancia entre " + B.distancia(A))
+print("El punto A es " + A.string()) ; print("El punto B es " + B.string()) ; print("El punto C es " + C.string()); print("El punto D es " + D.string())
+print("El punto A está en el " + A.cuadrante()) ; print("El punto B está en el " + B.cuadrante()) ; print("El punto C está en el " + C.cuadrante()) ; print("El punto D está en el" + D.cuadrante())
+print("El vector AB es "+A.vector(B).string()) ; print("El vector BA es " + B.vector(A).string())
+print("La distancia entre A y B es " + A.distancia(B)) ; print("La distancia entre B y A es " + B.distancia(A))
 if A.distancia(D) > B.distancia(D) and A.distancia(D) > C.distancia(D):
     print("El punto A se encuentra más lejos del origen")
 elif B.distancia(D) > A.distancia(D) and B.distancia(D) > C.distancia(D):
