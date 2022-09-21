@@ -39,5 +39,5 @@ class Graficos:
         x = [A.x, B.x, C.x, D.x] ; y = [A.y, B.y, C.y, D.y] # Lista de coordenadas
         plt.plot(x, y, "ro") ; plt.axis([-10, 10, -10, 10])
         plt.title("Puntos") ; plt.xlabel("Eje x") ; plt.ylabel("Eje y") ; plt.grid() #Pone cuadrículas al gráfico
-        plt.show()
+        plt.savefig("Images/puntos.jpeg"); plt.show() 
 Graficos.grafico()

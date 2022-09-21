@@ -2,6 +2,7 @@ from examen import Punto
 from examen import Rectangulo
 
 def iniciador():
+    print("Bienvenido al simulador de la geometría plana")
     A = Punto(2, 3) ; B = Punto(5, 5) ; C = Punto(-3, -1) ; D = Punto(0, 0)
     print("El punto A es " + A.string()) ; print("El punto B es " + B.string()) ; print("El punto C es " + C.string()); print("El punto D es " + D.string())
     print("El punto A está en el " + A.cuadrante()) ; print("El punto B está en el " + B.cuadrante()) ; print("El punto C está en el " + C.cuadrante()) ; print("El punto D está en el " + D.cuadrante())
