@@ -25,3 +25,10 @@ class Rectangulo:
     def __init__(self, punto1, punto2):
         self.punto1 = punto1
         self.punto2 = punto2
+    def base(self):
+        return abs(self.punto1.x - self.punto2.x)
+    def altura(self):
+        return abs(self.punto1.y - self.punto2.y)
+    def area(self):
+        return self.base() * self.altura()
+print(f"El área del Rectángulo es {Rectangulo(Punto(1, 2), Punto(3, 4)).area()}")
