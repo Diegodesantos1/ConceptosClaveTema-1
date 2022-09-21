@@ -31,4 +31,16 @@ class Rectangulo:
         return abs(self.punto1.y - self.punto2.y)
     def area(self):
         return self.base() * self.altura()
-print(f"El área del Rectángulo es {Rectangulo(Punto(1, 2), Punto(3, 4)).area()}")
+
+A = Punto(2, 3) ; B = Punto(5, 5) ; C = Punto(-3, -1) ; D = Punto(0, 0)
+print(A.string()) ; print(B.string()) ; print(C.string()); print(D.string())
+print(A.cuadrante()) ; print(B.cuadrante()) ; print(C.cuadrante()) ; print(D.cuadrante())
+print(A.vector(B).string()) ; print(B.vector(A).string())
+print(A.distancia(B)) ; print(B.distancia(A))
+if A.distancia(D) > B.distancia(D) and A.distancia(D) > C.distancia(D):
+    print("A")
+elif B.distancia(D) > A.distancia(D) and B.distancia(D) > C.distancia(D):
+    print("B")
+else:
+    print("C")
+
