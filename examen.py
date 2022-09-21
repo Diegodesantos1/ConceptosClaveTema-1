@@ -16,7 +16,7 @@ class Punto:
         elif self.x > 0 and self.y < 0:
             return "cuarto cuadrante"
         else:
-            return 0
+            return "origen"
     def vector(self, punto):
         return Punto(punto.x - self.x, punto.y - self.y)
     def distancia(self, punto):
