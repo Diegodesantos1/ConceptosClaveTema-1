@@ -40,4 +40,3 @@ class Graficos:
         plt.plot(x, y, "ro") ; plt.axis([-10, 10, -10, 10])
         plt.title('Eje de Coordenadas', loc = "center", fontdict = {'fontsize':20, 'fontweight':'bold', 'color':'tab:blue'}) ; plt.xlabel("Eje x") ; plt.ylabel("Eje y") ; plt.grid() #Pone cuadrículas al gráfico
         plt.axhline(y = 0, color = 'black', linestyle = '-') ; plt.axvline(x = 0, color = 'black', linestyle = '-') ;plt.savefig("Images/puntos.jpeg"); plt.show()
-Graficos.grafico()
