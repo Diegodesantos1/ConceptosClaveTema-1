@@ -2,7 +2,7 @@ class Punto:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-    def __str__(self):
+    def string(self):
         return "({0},{1})".format(self.x, self.y)
     def crear_punto(self):
         return Punto(self.x, self.y)
@@ -17,4 +17,7 @@ class Punto:
             return 4
         else:
             return 0
-Punto(1, 2).cuadrante()
+    def vector(self, punto):
+        return Punto(punto.x - self.x, punto.y - self.y)
+    def distancia(self, punto):
+        return ((punto.x - self.x)**2 + (punto.y - self.y)**2)**0.5
